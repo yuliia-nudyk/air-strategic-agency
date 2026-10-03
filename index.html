@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="/assets/favicon3-Dm8NVxmx.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      if (localStorage.getItem('air-theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    <script type="text/javascript" src="./src/scripts/main.js" defer></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-2k-nrKg8.css">
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="header__content">
+        <nav class="nav header__nav">
+          <div class="nav__actions">
+            <a href="#">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='46'%20height='28'%20viewBox='0%200%2046%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.128%2018.964L14.428%205.356L20.728%2018.964H8.128ZM22.24%2022.204L24.292%2026.632H27.856L16.12%201.432H12.736L1%2026.632H4.564L6.616%2022.204H22.24Z'%20fill='white'/%3e%3cpath%20d='M28.2025%203.448C28.2025%204.168%2028.4185%204.744%2028.8865%205.212C29.3545%205.68%2029.9305%205.896%2030.6505%205.896C31.3345%205.896%2031.9105%205.68%2032.3785%205.212C32.8465%204.744%2033.0985%204.168%2033.0985%203.448C33.0985%202.764%2032.8465%202.188%2032.3785%201.72C31.9105%201.252%2031.3345%201%2030.6505%201C29.9305%201%2029.3545%201.252%2028.8865%201.72C28.4185%202.188%2028.2025%202.764%2028.2025%203.448ZM32.1985%208.632H29.1025V26.632H32.1985V8.632Z'%20fill='white'/%3e%3cpath%20d='M38.6183%2011.332V8.632H35.6303V26.632H38.7263V18.244C38.7263%2017.236%2038.7983%2016.336%2038.9783%2015.472C39.1223%2014.644%2039.4103%2013.924%2039.8423%2013.312C40.2743%2012.736%2040.8143%2012.268%2041.4983%2011.944C42.1463%2011.62%2043.0103%2011.44%2044.0183%2011.44C44.3423%2011.44%2044.6303%2011.476%2044.9183%2011.512C45.2063%2011.548%2045.4943%2011.584%2045.8183%2011.656V8.38C45.5303%208.344%2045.2423%208.308%2044.9543%208.272C44.6663%208.236%2044.3423%208.2%2044.0543%208.2C42.7583%208.2%2041.6783%208.488%2040.7783%209.028C39.8783%209.568%2039.1583%2010.324%2038.6183%2011.332Z'%20fill='white'/%3e%3c/svg%3e"
+                alt="air Logo"
+                class="logo-icon"
+              />
+            </a>
+
+            <a class="nav__menu-link" href="#menu">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='18'%20height='8'%20viewBox='0%200%2018%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M18%208H0V6H18V8ZM18%202H0V0H18V2Z'%20fill='white'/%3e%3c/svg%3e"
+                alt="menu-sign"
+                class="menu-icon"
+              />
+            </a>
+          </div>
+
+          <ul class="inline-menu">
+            <li>
+              <a href="#who-we-are" class="link">About us</a>
+            </li>
+
+            <li>
+              <a href="#services" class="link">Services</a>
+            </li>
+
+            <li>
+              <a href="#testimonials" class="link">Testimonials</a>
+            </li>
+
+            <li>
+              <a href="#contact-us" class="link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__right-bar">
+            <button
+              class="theme-switcher"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <span class="theme-switcher__icon theme-switcher__icon--sun">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sun preview-icon"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </span>
+
+              <span class="theme-switcher__icon theme-switcher__icon--moon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-moon preview-icon"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </span>
+
+              <div class="theme-switcher__thumb"></div>
+            </button>
+
+            <a class="link" href="#send-us-a-message"> Hire us </a>
+          </div>
+        </nav>
+
+        <div class="header__main">
+          <div class="strategic-agency header__strategic-agency">
+            <h1 class="strategic-agency__title">Strategic Agency</h1>
+            <p class="strategic-agency__slogan">
+              We believe in the power of bold ideas that can solve business
+              challenges.
+            </p>
+            <a href="#who-we-are" class="button"> Learn more </a>
+          </div>
+
+          <div class="slider header__slider">
+            <div class="slider__slides">
+              <div class="slide">
+                <img
+                  src="/assets/1-h4QkvPYL.png"
+                  alt=""
+                  class="slide__image"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/assets/2-B5G_NDmj.jpg"
+                  alt=""
+                  class="slide__image"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/assets/3-CTs-XlNK.jpg"
+                  alt=""
+                  class="slide__image"
+                />
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/assets/4-CMcaqfcI.jpg"
+                  alt=""
+                  class="slide__image"
+                />
+              </div>
+            </div>
+
+            <div class="slider__content">
+              <div class="slider__switch-buttons">
+                <button
+                  class="slider__switch-button slider__switch-button--prev"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="slider__switch-icon"
+                  >
+                    <g clip-path="url(#clip0_9456_274)">
+                      <path
+                        d="M11.5575 5.5575L10.5 4.5L6 9L10.5 13.5L11.5575 12.4425L8.1225 9L11.5575 5.5575Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9456_274">
+                        <rect width="18" height="18" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button
+                  class="slider__switch-button slider__switch-button--next"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="slider__switch-icon"
+                  >
+                    <g clip-path="url(#clip0_9456_269)">
+                      <path
+                        d="M6.4425 5.5575L7.5 4.5L12 9L7.5 13.5L6.4425 12.4425L9.8775 9L6.4425 5.5575Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9456_269">
+                        <rect
+                          width="18"
+                          height="18"
+                          fill="white"
+                          transform="matrix(-1 0 0 1 18 0)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="slider__text">
+                <p class="slider__title">INtro</p>
+                <p class="slider__subtitle">
+                  By the same illusion which lifts the horizon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu page__menu" id="menu">
+      <nav class="menu__nav nav">
+        <div class="nav__actions">
+          <a class="nav__logo-img" href="#">
+            <img src="data:image/svg+xml,%3csvg%20width='46'%20height='28'%20viewBox='0%200%2046%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.128%2018.964L14.428%205.356L20.728%2018.964H8.128ZM22.24%2022.204L24.292%2026.632H27.856L16.12%201.432H12.736L1%2026.632H4.564L6.616%2022.204H22.24Z'%20fill='white'/%3e%3cpath%20d='M28.2025%203.448C28.2025%204.168%2028.4185%204.744%2028.8865%205.212C29.3545%205.68%2029.9305%205.896%2030.6505%205.896C31.3345%205.896%2031.9105%205.68%2032.3785%205.212C32.8465%204.744%2033.0985%204.168%2033.0985%203.448C33.0985%202.764%2032.8465%202.188%2032.3785%201.72C31.9105%201.252%2031.3345%201%2030.6505%201C29.9305%201%2029.3545%201.252%2028.8865%201.72C28.4185%202.188%2028.2025%202.764%2028.2025%203.448ZM32.1985%208.632H29.1025V26.632H32.1985V8.632Z'%20fill='white'/%3e%3cpath%20d='M38.6183%2011.332V8.632H35.6303V26.632H38.7263V18.244C38.7263%2017.236%2038.7983%2016.336%2038.9783%2015.472C39.1223%2014.644%2039.4103%2013.924%2039.8423%2013.312C40.2743%2012.736%2040.8143%2012.268%2041.4983%2011.944C42.1463%2011.62%2043.0103%2011.44%2044.0183%2011.44C44.3423%2011.44%2044.6303%2011.476%2044.9183%2011.512C45.2063%2011.548%2045.4943%2011.584%2045.8183%2011.656V8.38C45.5303%208.344%2045.2423%208.308%2044.9543%208.272C44.6663%208.236%2044.3423%208.2%2044.0543%208.2C42.7583%208.2%2041.6783%208.488%2040.7783%209.028C39.8783%209.568%2039.1583%2010.324%2038.6183%2011.332Z'%20fill='white'/%3e%3c/svg%3e" alt="air Logo" class="logo-icon" />
+          </a>
+
+          <a class="nav__close-link" href="#">
+            <img
+              class="cross-icon"
+              src="data:image/svg+xml,%3csvg%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.5923%203.55619C21.1856%202.96288%2021.1856%202.00093%2020.5923%201.40762C19.999%200.814306%2019.037%200.814306%2018.4437%201.40762L10.9999%208.85143L3.55611%201.40762C2.9628%200.814305%202.00085%200.814306%201.40754%201.40762C0.814226%202.00093%200.814226%202.96288%201.40754%203.55619L8.85135%2011L1.40754%2018.4438C0.814225%2019.0371%200.814226%2019.9991%201.40754%2020.5924C2.00085%2021.1857%202.9628%2021.1857%203.55611%2020.5924L10.9999%2013.1486L18.4437%2020.5924C19.037%2021.1857%2019.999%2021.1857%2020.5923%2020.5924C21.1856%2019.9991%2021.1856%2019.0371%2020.5923%2018.4438L13.1485%2011L20.5923%203.55619Z'%20fill='white'/%3e%3c/svg%3e"
+              alt="close-sign"
+            />
+          </a>
+        </div>
+
+        <a class="link nav__contact-link" href="#send-us-a-message">
+          Hire us
+        </a>
+      </nav>
+
+      <ul class="menu-list menu__list">
+        <li>
+          <a href="#who-we-are" class="link">About us</a>
+        </li>
+
+        <li>
+          <a href="#services" class="link">Services</a>
+        </li>
+
+        <li>
+          <a href="#testimonials" class="link">Testimonials</a>
+        </li>
+
+        <li>
+          <a href="#contact-us" class="link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="who-we-are" id="who-we-are">
+      <h2 class="who-we-are__title">Who we are</h2>
+
+      <p class="who-we-are__description">
+        We embrace a strategic approach to creative ideas. We are interested in
+        people and human relationships. This is the main thing you need to know
+        about us. We believe in the power of bold ideas that can solve business
+        challenges.
+      </p>
+    </section>
+
+    <section class="our-expertise" id="our-expertise">
+      <div class="our-expertise__content">
+        <h2 class="our-expertise__title">Our expertise</h2>
+
+        <div class="our-expertise__cards">
+          <div class="expertise-card">
+            <img
+              class="expertise-card__photo"
+              src="/assets/1-DLacdu5Y.jpg"
+              alt="branding-photo"
+            />
+
+            <h2 class="expertise-card__title">Branding</h2>
+
+            <p class="expertise-card__description">
+              We create additional value for companies, products, services as
+              well as verbal and visual ways to deliver it to the audience.
+            </p>
+          </div>
+
+          <div class="expertise-card">
+            <img
+              class="expertise-card__photo"
+              src="/assets/2-CYyODgup.jpg"
+              alt="branding-photo"
+            />
+
+            <h2 class="expertise-card__title">Communication</h2>
+
+            <p class="expertise-card__description">
+              We strive to create communications that can increase media
+              performance. We use everything — words, meanings, stories, art,
+              movies.
+            </p>
+          </div>
+
+          <div class="expertise-card">
+            <img
+              class="expertise-card__photo"
+              src="/assets/3-BcOWeK_h.jpg"
+              alt="branding-photo"
+            />
+
+            <h2 class="expertise-card__title">Strategy</h2>
+
+            <p class="expertise-card__description">
+              We create business growth strategies, from the moment of its birth
+              to the achievement of the necessary business indicators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__introduction">
+        <p class="services__eyebrow">Services</p>
+
+        <h2 class="services__title">Air is a full service creative agency</h2>
+
+        <p class="services__description">
+          Deep analytics, strong strategy and bright creative ideas.
+        </p>
+
+        <br />
+
+        <p class="services__description">
+          We are sure that first-rate job is possible only if all three
+          components are united.
+        </p>
+      </div>
+
+      <div class="services__cards">
+        <div class="services-card services-card--brand services__card">
+          <h3 class="services-card__number">001</h3>
+
+          <ul class="services-card__specialization-list">
+            <li class="services-card__specialization">Brand Development</li>
+
+            <li class="services-card__specialization">Copywriting</li>
+
+            <li class="services-card__specialization">Logo & Webite Design</li>
+
+            <li class="services-card__specialization">Packaging</li>
+          </ul>
+
+          <a href="#testimonials" class="services-card__arrow">
+            <div class="services-card__arrow-sign">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            Learn more
+          </a>
+        </div>
+
+        <div class="services-card services-card--content services__card">
+          <h3 class="services-card__number">002</h3>
+
+          <ul class="services-card__specialization-list">
+            <li class="services-card__specialization">Сontent Production</li>
+
+            <li class="services-card__specialization">Graphic Design</li>
+
+            <li class="services-card__specialization">Video Production</li>
+
+            <li class="services-card__specialization">Post Production</li>
+          </ul>
+
+          <a href="#testimonials" class="services-card__arrow">
+            <div class="services-card__arrow-sign">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            Learn more
+          </a>
+        </div>
+
+        <div class="services-card services-card--marketing services__card">
+          <h3 class="services-card__number">003</h3>
+
+          <ul class="services-card__specialization-list">
+            <li class="services-card__specialization">Marketing Strategy</li>
+
+            <li class="services-card__specialization">Email Marketing</li>
+
+            <li class="services-card__specialization">Paid Advertising</li>
+
+            <li class="services-card__specialization">Blog Content & SEO</li>
+          </ul>
+
+          <a href="#testimonials" class="services-card__arrow">
+            <div class="services-card__arrow-sign">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            Learn more
+          </a>
+        </div>
+
+        <div class="services-card services-card--communications services__card">
+          <h3 class="services-card__number">004</h3>
+
+          <ul class="services-card__specialization-list">
+            <li class="services-card__specialization">
+              Digital Communications
+            </li>
+
+            <li class="services-card__specialization">Influencer Marketing</li>
+
+            <li class="services-card__specialization">Product Placements</li>
+
+            <li class="services-card__specialization">
+              Strategic Partnerships
+            </li>
+          </ul>
+
+          <a href="#testimonials" class="services-card__arrow">
+            <div class="services-card__arrow-sign">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__heading">
+        <p class="testimonials__eyebrow">Testimonials</p>
+
+        <h2 class="testimonials__title">What people say</h2>
+      </div>
+
+      <div class="testimonials__reviews">
+        <div
+          class="testimonial-review testimonial-review--accent-1 testimonials__review"
+        >
+          <div class="testimonial-review__photo-container">
+            <img
+              src="/assets/testimonial-ava-1-BKEhMcbT.jpg"
+              alt="first-testimonial"
+              class="testimonial-review__photo"
+            />
+          </div>
+
+          <div class="testimonial-review__quotes">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 21.48C2 20.36 2 19.24 2 18.12C2 16.9533 2 15.81 2 14.69C2 11.0967 2.51333 8.27334 3.54 6.22C4.56667 4.16667 6.36333 3.09333 8.93 3L10.26 5.73C8.81333 5.87 7.81 6.57 7.25 7.83C6.73667 9.04333 6.48 10.98 6.48 13.64H10.19V21.48H2ZM14.32 21.48C14.32 20.36 14.32 19.24 14.32 18.12C14.32 16.9533 14.32 15.81 14.32 14.69C14.32 11.0967 14.8333 8.27334 15.86 6.22C16.8867 4.16667 18.6833 3.09333 21.25 3L22.58 5.73C21.1333 5.87 20.13 6.57 19.57 7.83C19.0567 9.04333 18.8 10.98 18.8 13.64H22.51V21.48H14.32Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+
+          <p class="testimonial-review__opinion">
+            AIR’s ideas are refreshing and out of the box. Authentic team that
+            focuses on the important path of the brand.
+          </p>
+
+          <p class="testimonial-review__reviewer">Tal Gilad</p>
+
+          <p class="testimonial-review__reviewer-company">Teach for America</p>
+        </div>
+
+        <div
+          class="testimonial-review testimonial-review--accent-2 testimonials__review"
+        >
+          <div class="testimonial-review__photo-container">
+            <img
+              src="/assets/testimonial-ava-2-BN1D_4PX.jpg"
+              alt="second-testimonial"
+              class="testimonial-review__photo"
+            />
+          </div>
+
+          <div class="testimonial-review__quotes">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 21.48C2 20.36 2 19.24 2 18.12C2 16.9533 2 15.81 2 14.69C2 11.0967 2.51333 8.27334 3.54 6.22C4.56667 4.16667 6.36333 3.09333 8.93 3L10.26 5.73C8.81333 5.87 7.81 6.57 7.25 7.83C6.73667 9.04333 6.48 10.98 6.48 13.64H10.19V21.48H2ZM14.32 21.48C14.32 20.36 14.32 19.24 14.32 18.12C14.32 16.9533 14.32 15.81 14.32 14.69C14.32 11.0967 14.8333 8.27334 15.86 6.22C16.8867 4.16667 18.6833 3.09333 21.25 3L22.58 5.73C21.1333 5.87 20.13 6.57 19.57 7.83C19.0567 9.04333 18.8 10.98 18.8 13.64H22.51V21.48H14.32Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+
+          <p class="testimonial-review__opinion">
+            AIR is an exceptional agency that leads with creative talent,
+            first-class account servicing.
+          </p>
+
+          <p class="testimonial-review__reviewer">Azadeh Hawkins</p>
+
+          <p class="testimonial-review__reviewer-company">Hawkins Consulting</p>
+        </div>
+
+        <div
+          class="testimonial-review testimonial-review--accent-3 testimonials__review"
+        >
+          <div class="testimonial-review__photo-container">
+            <img
+              src="/assets/testimonial-ava-3-DJuXWzXJ.jpg"
+              alt="third-testimonial"
+              class="testimonial-review__photo"
+            />
+          </div>
+
+          <div class="testimonial-review__quotes">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 21.48C2 20.36 2 19.24 2 18.12C2 16.9533 2 15.81 2 14.69C2 11.0967 2.51333 8.27334 3.54 6.22C4.56667 4.16667 6.36333 3.09333 8.93 3L10.26 5.73C8.81333 5.87 7.81 6.57 7.25 7.83C6.73667 9.04333 6.48 10.98 6.48 13.64H10.19V21.48H2ZM14.32 21.48C14.32 20.36 14.32 19.24 14.32 18.12C14.32 16.9533 14.32 15.81 14.32 14.69C14.32 11.0967 14.8333 8.27334 15.86 6.22C16.8867 4.16667 18.6833 3.09333 21.25 3L22.58 5.73C21.1333 5.87 20.13 6.57 19.57 7.83C19.0567 9.04333 18.8 10.98 18.8 13.64H22.51V21.48H14.32Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+
+          <p class="testimonial-review__opinion">
+            AIR raises the agency bar to stratospheric heights on both creative
+            output and client service.
+          </p>
+
+          <p class="testimonial-review__reviewer">Michel Grover</p>
+
+          <p class="testimonial-review__reviewer-company">Hulu</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-passion-results">
+      <div class="vision-passion-results__content">
+        <h2 class="vision-passion-results__title">Vision, Passion, Results</h2>
+
+        <p class="vision-passion-results__slogan">
+          We are sure that first-rate job is possible only if all three
+          components are united.
+        </p>
+
+        <a
+          href="#send-us-a-message"
+          class="button vision-passion-results__button"
+        >
+          Apply
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div
+          class="footer__send-us-a-message send-us-a-message"
+          id="send-us-a-message"
+        >
+          <h2 class="send-us-a-message__title">Send us a message</h2>
+
+          <form action="post" class="form" id="form">
+            <div class="form__fields">
+              <input
+                type="email"
+                class="form__field"
+                placeholder="Your email"
+                required
+              />
+
+              <input
+                type="text"
+                class="form__field"
+                placeholder="Your name"
+                required
+              />
+
+              <input
+                type="text"
+                class="form__field"
+                placeholder="Your message"
+                required
+              />
+            </div>
+
+            <button class="button form__button">Send</button>
+          </form>
+        </div>
+
+        <div class="footer__contact-us contact-us" id="contact-us">
+          <h2 class="contact-us__title">Contact us</h2>
+
+          <div class="contact-us__contacts">
+            <div class="contact-us__contact">
+              <h3 class="contact-us__contact-name">Call us</h3>
+
+              <a href="tel:654321987" class="contact-us__contact-link">
+                654 321 987
+              </a>
+            </div>
+
+            <div class="contact-us__contact">
+              <h3 class="contact-us__contact-name">Visit us</h3>
+
+              <a
+                href="https://goo.gl/maps/up7QSv9QegH1iMsi6"
+                class="contact-us__contact-link"
+                target="_blank"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+            </div>
+
+            <div class="contact-us__contact">
+              <h3 class="contact-us__contact-name">our socials</h3>
+
+              <div class="contact-us__social-media-contacts">
+                <a
+                  href="https://www.facebook.com/"
+                  class="contact-us__social-media-contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Facebook page"
+                >
+                  <svg
+                    width="15"
+                    height="25"
+                    viewBox="0 0 15 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14.6667 1.66674C14.6667 1.48993 14.5964 1.32036 14.4714 1.19533C14.3464 1.07031 14.1768 1.00007 14 1.00007H10.6667C8.98816 0.916459 7.3448 1.50059 6.09563 2.62484C4.84646 3.7491 4.09305 5.32207 4 7.00007V10.6001H0.666667C0.489856 10.6001 0.320287 10.6703 0.195262 10.7953C0.070238 10.9204 0 11.0899 0 11.2667V14.7334C0 14.9102 0.070238 15.0798 0.195262 15.2048C0.320287 15.3298 0.489856 15.4001 0.666667 15.4001H4V24.3334C4 24.5102 4.07024 24.6798 4.19526 24.8048C4.32029 24.9298 4.48986 25.0001 4.66667 25.0001H8.66667C8.84348 25.0001 9.01305 24.9298 9.13807 24.8048C9.2631 24.6798 9.33333 24.5102 9.33333 24.3334V15.4001H12.8267C12.9749 15.4022 13.1197 15.3548 13.238 15.2655C13.3563 15.1762 13.4415 15.0499 13.48 14.9067L14.44 11.4401C14.4665 11.3416 14.4701 11.2383 14.4504 11.1382C14.4308 11.0381 14.3884 10.9438 14.3265 10.8627C14.2647 10.7816 14.1851 10.7157 14.0938 10.6701C14.0025 10.6246 13.902 10.6006 13.8 10.6001H9.33333V7.00007C9.3665 6.67004 9.52149 6.36422 9.76803 6.14233C10.0146 5.92044 10.335 5.79841 10.6667 5.80007H14C14.1768 5.80007 14.3464 5.72983 14.4714 5.60481C14.5964 5.47978 14.6667 5.31021 14.6667 5.1334V1.66674Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://x.com/?lang=en"
+                  class="contact-us__social-media-contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our X page"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1024 1024"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M818 800 498.11 333.745l.546.437L787.084 0h-96.385L455.738 272 269.15 0H16.367l298.648 435.31-.036-.037L0 800h96.385l261.222-302.618L565.217 800zM230.96 72.727l448.827 654.546h-76.38L154.217 72.727z"
+                      transform="translate(103 112)"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/?hl=en"
+                  class="contact-us__social-media-contact contact-us__social-media-contact--inst"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Instagram page"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12.0027 5.8467C8.59743 5.8467 5.85075 8.594 5.85075 12C5.85075 15.406 8.59743 18.1533 12.0027 18.1533C15.4079 18.1533 18.1546 15.406 18.1546 12C18.1546 8.594 15.4079 5.8467 12.0027 5.8467ZM12.0027 16.0004C9.80212 16.0004 8.00312 14.2064 8.00312 12C8.00312 9.7936 9.79677 7.99955 12.0027 7.99955C14.2086 7.99955 16.0022 9.7936 16.0022 12C16.0022 14.2064 14.2032 16.0004 12.0027 16.0004ZM19.8412 5.595C19.8412 6.39295 19.1987 7.03024 18.4062 7.03024C17.6085 7.03024 16.9713 6.38759 16.9713 5.595C16.9713 4.80241 17.6138 4.15977 18.4062 4.15977C19.1987 4.15977 19.8412 4.80241 19.8412 5.595ZM23.9157 7.05166C23.8247 5.12909 23.3856 3.42608 21.9775 2.02298C20.5747 0.619882 18.8721 0.180743 16.9499 0.0843468C14.9689 -0.0281156 9.03112 -0.0281156 7.05008 0.0843468C5.1333 0.175388 3.43068 0.614526 2.02253 2.01763C0.614389 3.42073 0.180703 5.12373 0.0843279 7.0463C-0.0281093 9.02778 -0.0281093 14.9669 0.0843279 16.9483C0.175349 18.8709 0.614389 20.5739 2.02253 21.977C3.43068 23.3801 5.12794 23.8193 7.05008 23.9157C9.03112 24.0281 14.9689 24.0281 16.9499 23.9157C18.8721 23.8246 20.5747 23.3855 21.9775 21.977C23.3803 20.5739 23.8193 18.8709 23.9157 16.9483C24.0281 14.9669 24.0281 9.03314 23.9157 7.05166ZM21.3564 19.0744C20.9388 20.1241 20.1303 20.9327 19.0755 21.3558C17.496 21.9824 13.7481 21.8378 12.0027 21.8378C10.2572 21.8378 6.50396 21.977 4.92984 21.3558C3.88042 20.9381 3.07195 20.1294 2.64897 19.0744C2.02253 17.4946 2.16709 13.7458 2.16709 12C2.16709 10.2542 2.02789 6.50006 2.64897 4.92558C3.06659 3.87593 3.87507 3.06728 4.92984 2.6442C6.50931 2.01763 10.2572 2.16222 12.0027 2.16222C13.7481 2.16222 17.5014 2.02298 19.0755 2.6442C20.1249 3.06192 20.9334 3.87058 21.3564 4.92558C21.9828 6.50541 21.8383 10.2542 21.8383 12C21.8383 13.7458 21.9828 17.4999 21.3564 19.0744Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20width='46'%20height='28'%20viewBox='0%200%2046%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.128%2018.964L14.428%205.356L20.728%2018.964H8.128ZM22.24%2022.204L24.292%2026.632H27.856L16.12%201.432H12.736L1%2026.632H4.564L6.616%2022.204H22.24Z'%20fill='white'/%3e%3cpath%20d='M28.2025%203.448C28.2025%204.168%2028.4185%204.744%2028.8865%205.212C29.3545%205.68%2029.9305%205.896%2030.6505%205.896C31.3345%205.896%2031.9105%205.68%2032.3785%205.212C32.8465%204.744%2033.0985%204.168%2033.0985%203.448C33.0985%202.764%2032.8465%202.188%2032.3785%201.72C31.9105%201.252%2031.3345%201%2030.6505%201C29.9305%201%2029.3545%201.252%2028.8865%201.72C28.4185%202.188%2028.2025%202.764%2028.2025%203.448ZM32.1985%208.632H29.1025V26.632H32.1985V8.632Z'%20fill='white'/%3e%3cpath%20d='M38.6183%2011.332V8.632H35.6303V26.632H38.7263V18.244C38.7263%2017.236%2038.7983%2016.336%2038.9783%2015.472C39.1223%2014.644%2039.4103%2013.924%2039.8423%2013.312C40.2743%2012.736%2040.8143%2012.268%2041.4983%2011.944C42.1463%2011.62%2043.0103%2011.44%2044.0183%2011.44C44.3423%2011.44%2044.6303%2011.476%2044.9183%2011.512C45.2063%2011.548%2045.4943%2011.584%2045.8183%2011.656V8.38C45.5303%208.344%2045.2423%208.308%2044.9543%208.272C44.6663%208.236%2044.3423%208.2%2044.0543%208.2C42.7583%208.2%2041.6783%208.488%2040.7783%209.028C39.8783%209.568%2039.1583%2010.324%2038.6183%2011.332Z'%20fill='white'/%3e%3c/svg%3e" alt="air Logo" class="logo-icon" />
+          </a>
+
+          <ul class="footer__nav-list">
+            <li>
+              <a href="#who-we-are" class="link">About us</a>
+            </li>
+
+            <li>
+              <a href="#services" class="link">Services</a>
+            </li>
+
+            <li>
+              <a href="#testimonials" class="link">Testimonials</a>
+            </li>
+
+            <li>
+              <a href="#contact-us" class="link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
