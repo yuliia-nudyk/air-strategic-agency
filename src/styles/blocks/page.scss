@@ -1,0 +1,52 @@
+.page {
+  background-color: var(--bg-color);
+  font-family: $main-font;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+
+  [id] {
+    scroll-margin-top: 40px;
+
+    @include on-tablet {
+      scroll-margin-top: 60px;
+    }
+
+    @include on-small-desktop {
+      scroll-margin-top: 80px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 120px;
+
+    background-color: var(--bg-color);
+
+    @include on-tablet {
+      gap: 148px;
+    }
+
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    z-index: 1000;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}

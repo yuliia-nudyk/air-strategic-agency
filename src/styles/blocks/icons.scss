@@ -1,0 +1,20 @@
+.logo-icon {
+  width: 46px;
+  height: 28px;
+
+  @include icon-hover;
+}
+
+.menu-icon {
+  width: 18px;
+  height: 8px;
+
+  @include icon-hover;
+}
+
+.cross-icon {
+  width: 17px;
+  height: 17px;
+
+  @include icon-hover;
+}

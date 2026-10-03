@@ -1,0 +1,94 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: $title-font;
+  font-weight: 600;
+}
+
+%heading-xl {
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #fff;
+
+  @include on-tablet {
+    font-size: 64px;
+    line-height: 68px;
+  }
+}
+
+%heading-lg {
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0;
+
+  color: $title-color;
+
+  @include on-tablet {
+    font-size: 52px;
+    line-height: 150%;
+  }
+}
+
+%heading-md {
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0;
+
+  color: $title-color;
+}
+
+%heading-sm {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-align: center;
+
+  color: $title-color;
+}
+
+%label-text {
+  font-family: $title-font;
+  font-size: 13px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #c0cdd7;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+
+  color: $primary-color;
+}
+
+%text-large {
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 600;
+
+  color: $primary-color;
+
+  @include on-tablet {
+    font-size: 24px;
+  }
+}
+
+%text-small {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0;
+
+  color: $primary-color;
+}

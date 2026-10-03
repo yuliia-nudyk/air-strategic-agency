@@ -1,0 +1,89 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin hoverAll($properties) {
+  $transitions: ();
+
+  @each $property, $value in $properties {
+    $transitions: append($transitions, #{$property} 0.3s, comma);
+  }
+
+  transition: $transitions;
+
+  &:hover {
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin dark-theme {
+  html.dark & {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin on-small-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin on-large-screen {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin grid {
+  @include on-tablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+  }
+
+  @include on-small-desktop {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+
+@mixin card($border-radius: 16px) { 
+  padding: 32px;
+  border-radius: $border-radius;
+  background-color: #fff;
+  box-shadow: 0px 9px 18px 0px #25293108;
+}
+
+@mixin container($padding-block-sm: 0, $padding-block-lg: 0) {
+  padding: $padding-block-sm 20px;
+
+  @include on-tablet {
+    padding: $padding-block-lg 40px;
+  }
+
+  @include on-small-desktop {
+    padding: $padding-block-lg 54px;
+  }
+
+  @include on-large-screen {
+    padding: $padding-block-lg 227px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+@mixin icon-hover {
+  @include hover(transform, scale(1.1));
+}

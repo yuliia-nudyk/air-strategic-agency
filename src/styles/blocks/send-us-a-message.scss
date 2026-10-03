@@ -1,0 +1,13 @@
+.send-us-a-message {
+  &__title {
+    @extend %heading-md;
+  
+    color: #fff;
+
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
+  }
+}

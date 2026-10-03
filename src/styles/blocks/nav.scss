@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__close-link {
+    display: flex;
+  }
+
+  &__menu-link {
+    @include on-small-desktop {
+      display: none;
+    }
+  }
+
+  &__right-bar {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+  }
+}

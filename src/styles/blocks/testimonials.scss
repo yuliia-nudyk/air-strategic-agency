@@ -1,0 +1,56 @@
+.testimonials {
+  @include container;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      width: 200px;
+
+      margin-bottom: 56px;
+    }
+
+    @include on-small-desktop {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__eyebrow {
+    @extend %label-text;
+  }
+
+  &__title {
+    @extend %heading-md;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @include on-tablet {
+      gap: 30px;
+    }
+
+    @include on-small-desktop {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @include on-large-screen {
+      gap: 30px;
+    }
+  }
+
+  &__review {
+    width: 100%;
+    max-width: 558px;
+    flex-grow: 1;
+  }
+}

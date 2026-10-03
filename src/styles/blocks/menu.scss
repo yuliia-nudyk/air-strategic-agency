@@ -1,0 +1,10 @@
+.menu {
+  height: 100vh;
+  background-color: var(--surface-color);
+
+  @include container;
+
+  &__nav {
+    padding-top: 20px;
+  }
+}

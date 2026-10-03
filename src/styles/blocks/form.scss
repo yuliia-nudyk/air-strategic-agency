@@ -1,0 +1,65 @@
+.form {
+  --highlight-color: #fff;
+
+  @include dark-theme {
+    --highlight-color: var(--accent-hover);
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-bottom: 56px;
+
+    @include on-tablet {
+      gap: 48px;
+
+      margin-bottom: 80px;
+    }
+  }
+
+  &__field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+    padding-bottom: 16px;
+
+    &::placeholder {
+      font-family: $title-font;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+
+      color: rgb(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      border-bottom: 2px solid var(--highlight-color);
+    }
+  }
+
+  &__button {
+    height: 56px;
+    line-height: 56px;
+    background-color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+
+    @include hoverAll((color: #f0ffff, background-color: var(--accent-hover)));
+
+    &:active {
+      color: #f0ffff;
+      background-color: var(--accent-hover);
+      box-shadow: 0.5px 1.5px 5px var(--accent-hover);
+    }
+  }
+}

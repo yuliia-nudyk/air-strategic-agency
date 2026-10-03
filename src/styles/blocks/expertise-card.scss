@@ -1,0 +1,38 @@
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include hover(transform, scale(1.05));
+
+  transition: transform 0.3s;
+
+  max-width: 362px;
+
+  @include on-small-desktop {
+      width: 214px;
+    }
+
+    @include on-large-screen {
+      width: 264px;
+    }
+
+  &__photo {
+    width: 166px;
+    height: 166px;
+    border-radius: 16px;
+    object-position: center;
+    object-fit: cover;
+
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    @extend %heading-sm;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

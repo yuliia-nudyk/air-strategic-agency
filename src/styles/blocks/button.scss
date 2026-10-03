@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+
+  font-size: 15px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  @include hoverAll((background-color: var(--accent-hover), color: #f0ffff));
+
+  &:active {
+    background-color: var(--accent-hover);
+    color: #f0ffff;
+    box-shadow: 0.5px 1.5px 5px var(--accent-hover);
+  }
+
+  @include on-tablet {
+    width: 264px;
+  }
+}

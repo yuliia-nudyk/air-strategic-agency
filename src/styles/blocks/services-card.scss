@@ -1,0 +1,96 @@
+.services-card {
+  //#region vars
+  --card-raduis: 24px;
+
+  @include dark-theme {
+    --card-raduis: 16px;
+  }
+
+  &--brand {
+    --card-accent: #{$light-blue-color};
+  }
+
+  &--content {
+    --card-accent: #{$yellow-color};
+  }
+
+  &--marketing {
+    --card-accent: #{$green-color};
+  }
+
+  &--communications {
+    --card-accent: #{$coral-color};
+  }
+
+  @include dark-theme {
+    --card-accent: var(--accent-color);
+  }
+  //#endregion
+
+  @include card(var(--card-raduis));
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 46px;
+    height: 24px;
+
+    background-color: color-mix(in srgb, var(--card-accent), transparent 90%);
+    border-radius: 23px;
+
+    font-size: 13px;
+    line-height: 100%;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--card-accent);
+
+    margin-bottom: 24px;
+  }
+
+  &__specialization-list {
+    margin-bottom: 32px;
+  }
+
+  &__specialization {
+    @extend %text-small;
+  }
+
+  &__arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    transition: all 0.3s;
+
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #334563;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #0d1523;
+
+      .services-card__arrow-sign {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__arrow-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: var(--card-accent);
+
+    transition: transform 0.2s;
+  }
+}

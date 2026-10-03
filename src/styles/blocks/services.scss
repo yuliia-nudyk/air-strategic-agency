@@ -1,0 +1,67 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include on-tablet {
+    @include grid;
+    row-gap: 56px;
+  }
+
+  @include container;
+
+  &__introduction {
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__eyebrow {
+    @extend %label-text;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    @extend %heading-md;
+    line-height: 130%;
+    margin-bottom: 24px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include on-tablet {
+      grid-column: 1 / -1;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include on-small-desktop {
+      padding-top: var(--services-card-offset);
+
+      grid-column: 7 / -1;
+      gap: 20px;
+    }
+
+    @include on-large-screen {
+      // width: 558px;
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    @include on-tablet {
+      &:nth-child(2n) {
+        transform: translateY(calc(-1 * var(--services-card-offset)));
+      }
+    }
+  }
+}

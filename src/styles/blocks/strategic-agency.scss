@@ -1,0 +1,36 @@
+.strategic-agency {
+  @include on-small-desktop {
+    display: inline-block;
+  }
+
+  &__title {
+    @extend %heading-xl;
+    margin-bottom: 32px;
+
+    @include on-tablet {
+      margin-bottom: 24px;
+    }
+
+    @include on-small-desktop {
+      max-width: 300px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__slogan {
+    max-width: 362px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+
+    margin-bottom: 72px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
+
+    @include on-small-desktop {
+      margin-bottom: 83px;
+    }
+  }
+}
